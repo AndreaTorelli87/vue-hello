@@ -11,9 +11,9 @@
     </head>
     <body class="p-0 m-0">
         <div id="app">
-            <div :class="classiDivApp">
+            <div :class="classiDivApp" :style="generaColoreRandom('background-color')">
                 <img @click="reload" :src="immagine" class="rounded-5" alt="Immagine random">  
-                <h1 :class="classiH1" :style="generaColoreRandom()">{{ message }}</h1>
+                <h1 :class="classiH1" :style="generaColoreRandom('color')">{{ message }}</h1>
             </div>     
         </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
